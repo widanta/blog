@@ -51,20 +51,21 @@ Route::get('/categories', function () {
     ]);
 });
 
-// categories banyak
-Route::get('/categories/{category:slug}', function (Category $category) {
-    return view('posts', [
-        'title' => "Post By Category : $category->name",
-        'active' => 'categories',
-        'posts' => $category->posts->load('category', 'author'),
-    ]);
-});
+// tidak di pakai karena sudah di tangani di model Post
+// // categories banyak
+// Route::get('/categories/{category:slug}', function (Category $category) {
+//     return view('posts', [
+//         'title' => "Post By Category : $category->name",
+//         'active' => 'categories',
+//         'posts' => $category->posts->load('category', 'author'),
+//     ]);
+// });
 
-
-Route::get('/authors/{author:username}', function (User $author) {
-    return view('posts', [
-        'title' => "Post By Author : $author->name",
-        'posts' => $author->posts->load('category', 'author'),
-        'active' => 'categories',
-    ]);
-});
+// // author
+// Route::get('/authors/{author:username}', function (User $author) {
+//     return view('posts', [
+//         'title' => "Post By Author : $author->name",
+//         'posts' => $author->posts->load('category', 'author'),
+//         'active' => 'posts',
+//     ]);
+// });
