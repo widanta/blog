@@ -63,3 +63,23 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Weddingku
+Platform untuk membuat undangan pernikahan online atau undangan pernikahan digital
+
+## Installation Develop & Live Mode
+- <b>git clone</b> <br>
+- <b>composer install</b> <br>
+- <b>copy .env.example .env</b> <br>
+- <b>copy /manage_repository/conn.php.example conn.php</b> <br>
+- <b>php artisan key:generate</b> <br>
+- <b>php artisan migrate</b> <br>
+- <b>php artisan db:seed</b> <br>
+- <b>php artisan storage:link</b> <br>
+- <b>php directory.php</b> <br>
+- Other setting environtment set on <b>.env</b>
+- If feel public directory not setup, type this syntax on your command <b>php directory.php</b>
+
+
+
+
